@@ -421,3 +421,59 @@ Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-12-31 14:38:13 -0600
+
+
+Started GET "/posts/edit" for ::1 at 2017-10-16 15:26:29 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[35mPost Load (1.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 34ms (ActiveRecord: 1.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=edit):
+  app/controllers/posts_controller.rb:7:in `show'
+
+
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.1ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.1ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (139.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2017-10-16 15:26:39 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=index):
+  app/controllers/posts_controller.rb:7:in `show'
+
+
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.6ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.6ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/frawlcity/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (121.7ms)
+
+
+Started GET "/posts" for ::1 at 2017-10-16 15:26:43 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 384ms (Views: 383.1ms | ActiveRecord: 0.2ms)
